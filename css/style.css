@@ -39,15 +39,24 @@ a {
 	color: white;
 }
 
+.navbar .nav > li > a:hover  {
+	color: #BCD630;
+}
+
+.navbar .tabbable > a.active {
+	border-right: 1px solid #BCD630;
+	border-left: 1px solid #BCD630;
+}
+
 .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding: 10px;
 }
 
 .navbar .btn-navbar .icon-bar {
   display: block;
-  width: 16px;
+  width: 12px;
   height: 2px;
-  background-color: #78EFED;
+  background-color: #BCD630;
   -webkit-border-radius: 2px;
   	-moz-border-radius: 2px;
   		border-radius: 2px;
@@ -102,14 +111,26 @@ a {
 	text-align: left;
 }
 
+.span4 .hero-unit {
+	height: 200px;
+}
+
+#three {
+	height: 60px;
+}
+
 footer {
 	color: #666;
 }
 
-ul li{
+ul li {
 	list-style-type: none;
 }
 
 .container > .container {
 	margin-bottom: 80px;
+}
+
+.bland {
+	color: #666;
 }
