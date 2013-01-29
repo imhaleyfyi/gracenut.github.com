@@ -1,17 +1,23 @@
 body {
 	background-image: url('../backgrounds/brushed_alu.png');
-	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
 	text-align: center;
 }
 body * {
 	text-align: center;
 }
 
+@media (min-width: 980px) {
+
+	body:nth-child(2){
+		margin-top: 100px;
+	}
+}
+
 h1 {
 	color: #333;
 	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: lighter;
-	font-size: 70px;
 }
 
 a {
@@ -54,16 +60,46 @@ a {
 }
 
 .hero-unit {
-	margin-top: 40px;
+	-webkit-box-shadow:3px 3px 5px 5px rgba(119, 119, 119, 0.2);
+		-moz-box-shadow:	3px 3px 5px 5px rgba(119, 119, 119, 0.2);
+			box-shadow:			3px 3px 5px 5px rgba(119, 119, 119, 0.2);
+	background-color: #696370;
+	opacity: 0.8;
+}
+
+.hero-unit * {
+	color: #FFF;
+	text-shadow: 0 0 5px #999;
+	color: transparent;
+}
+
+.hero-unit.active * {
+	text-shadow: none;
+	color: #FFF;
+	opacity: 1;
 }
 
 .hero-unit p {
 	text-align: left;
 }
 
-.hero-unit h1 {
+.hero-unit h1, .hero-unit h2 {
+	padding: 0;
+	margin: 0;
 	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: lighter;
+}
+
+.hero-unit h1 {
+	font-size: 80px;
+}
+
+.hero-unit h2 {
+	font-size: 40px;
+}
+
+.hero-unit ul li{
+	text-align: left;
 }
 
 footer {
@@ -72,4 +108,8 @@ footer {
 
 ul li{
 	list-style-type: none;
+}
+
+.container > .container {
+	margin-bottom: 80px;
 }
