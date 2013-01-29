@@ -12,4 +12,17 @@ $(document).ready(function(){
 			$('#'+$id).addClass('active');
 		}
 	});
+	$('.hero-unit').click(function(){
+		var $this = $(this)
+		if ($this.hasClass('active')){
+			return;
+		}
+		else {
+			var $id2 = '#n' + $this.attr('id');
+			$('a.active').removeClass('active');
+			$('div.active').removeClass('active');
+			$this.addClass('active');
+			$($id2).addClass('active');
+		}
+	})
 });
