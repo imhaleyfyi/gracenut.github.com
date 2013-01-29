@@ -11,7 +11,7 @@ body * {
 @media (min-width: 980px) {
 
 	body:nth-child(2){
-		margin-top: 100px;
+		margin-top: 80px;
 	}
 }
 
@@ -24,29 +24,34 @@ a {
 	color: #78EFED;
 }
 
+ul li {
+	list-style-type: none;
+}
+
 .navbar * {
 	font-weight: bold;
 }
 
 .navbar a.brand:link, .navbar a.brand:visited {
 	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 22px;
+	font-size: 25px;
 	color: #78EFED;
 	font-weight: normal;
 }
 
-.navbar .nav > li > a  {
-	color: white;
+.navbar .nav a:link, .navbar .nav a:visited {
+	color: #FFF;
 }
 
-.navbar .nav > li > a:hover  {
-	color: #BCD630;
+.navbar .nav a.active, .navbar .nav a.active:hover {
+	background-color: #333;
 }
 
-.navbar .tabbable > a.active {
+.navbar a.brand.active {
 	border-right: 1px solid #BCD630;
 	border-left: 1px solid #BCD630;
-}
+	color: #78EFED;
+} 
 
 .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding: 10px;
@@ -73,30 +78,27 @@ a {
 		-moz-box-shadow:	3px 3px 5px 5px rgba(119, 119, 119, 0.2);
 			box-shadow:			3px 3px 5px 5px rgba(119, 119, 119, 0.2);
 	background-color: #696370;
-	opacity: 0.8;
 }
 
-.hero-unit * {
-	color: #FFF;
-	text-shadow: 0 0 5px #999;
+.hero-unit *, .hero-unit a:link, .hero-unit a:hover {
+	text-shadow: 0 0 5px #BBB;
 	color: transparent;
+	text-decoration: none;
+	cursor: default;
 }
 
-.hero-unit.active * {
-	text-shadow: none;
-	color: #FFF;
-	opacity: 1;
-}
-
-.hero-unit p {
+.hero-unit p, .hero-unit ul li, .hero-unit h1 {
 	text-align: left;
 }
 
 .hero-unit h1, .hero-unit h2 {
-	padding: 0;
-	margin: 0;
+	display: block;
+	padding-top: 0;
+	margin-top: 0;
 	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: lighter;
+	text-shadow: 0 0 12px #BBB;
+	color: #999;
 }
 
 .hero-unit h1 {
@@ -107,30 +109,34 @@ a {
 	font-size: 40px;
 }
 
-.hero-unit ul li{
-	text-align: left;
+.hero-unit.active h1, .hero-unit.active h2, .hero-unit.active p, .hero-unit.active a, .hero-unit.active ul li {
+	text-shadow: none;
+	color: #FFF;
+	opacity: 1;
 }
 
-.span4 .hero-unit {
-	height: 200px;
+.span12 .hero-unit, .span4 .hero-unit{
+	height: 140px;
 }
 
-#three {
-	height: 60px;
+.span4 #three {
+	height: 80px;
 }
 
 footer {
-	color: #666;
+	color: #333;
 }
 
-ul li {
-	list-style-type: none;
+.navbar-fixed-bottom {
+	background-color: #FFF;
+	margin-left: -3px;
+	opacity: 0.5;
 }
 
 .container > .container {
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 }
 
 .bland {
-	color: #666;
+	color: #333;
 }
