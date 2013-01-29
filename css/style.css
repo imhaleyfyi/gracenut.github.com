@@ -1,0 +1,75 @@
+body {
+	background-image: url('../backgrounds/brushed_alu.png');
+	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+body * {
+	text-align: center;
+}
+
+h1 {
+	color: #333;
+	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	font-size: 70px;
+}
+
+a {
+	color: #78EFED;
+}
+
+.navbar * {
+	font-weight: bold;
+}
+
+.navbar a.brand:link, .navbar a.brand:visited {
+	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 22px;
+	color: #78EFED;
+	font-weight: normal;
+}
+
+.navbar .nav > li > a  {
+	color: white;
+}
+
+.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+    padding: 10px;
+}
+
+.navbar .btn-navbar .icon-bar {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: #78EFED;
+  -webkit-border-radius: 2px;
+  	-moz-border-radius: 2px;
+  		border-radius: 2px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  	-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+.btn-navbar .icon-bar + .icon-bar {
+  margin-top: 5px;
+}
+
+.hero-unit {
+	margin-top: 40px;
+}
+
+.hero-unit p {
+	text-align: left;
+}
+
+.hero-unit h1 {
+	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+}
+
+footer {
+	color: #666;
+}
+
+ul li{
+	list-style-type: none;
+}
