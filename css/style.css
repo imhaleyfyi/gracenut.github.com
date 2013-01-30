@@ -85,7 +85,7 @@ ul li {
 	background-color: #696370;
 }
 
-.hero-unit:hover {
+.hero-unit:hover:not(.active) {
 	cursor: pointer;
 }
 
