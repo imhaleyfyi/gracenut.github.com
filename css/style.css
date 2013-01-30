@@ -24,40 +24,37 @@ ul li {
 	list-style-type: none;
 }
 
-/*
 .navbar * {
 	font-weight: bold;
 }
 
-.navbar a.brand:link, .navbar a.brand:visited {
+.navbar a.active, .navbar .nav a.active {
+	cursor: default;
+	color: #78EFED;
+	text-shadow: -2px 2px 5px #333;
+}
+
+.navbar a.brand {
 	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 25px;
-	font-weight: normal;
+	font-size: 150%;
 	color: #78EFED;
-}
-
-.navbar .nav a:link, .navbar .nav a:visited {
-	color: #FFF;
-}
-
-.navbar .nav a.active, .navbar .nav a.active:hover, .navbar a.brand.hover {
-	color: #78EFED;
-}
-
-.navbar a.brand:not(.active) {
-	margin-left:-19px;
-	margin-right:1px;
+	border-right: 1px solid #78EFED;
+	border-left: 1px solid #78EFED;
 }
 
 .navbar a.brand.active {
-	border-right: 1px solid #BCD630;
-	border-left: 1px solid #BCD630;
-	cursor: default;
-} 
+	border-right: 1px solid #FF1769;
+	border-left: 1px solid #FF1769;
+}
 
-reworking this horrible CSS
+.navbar a.brand:not('.active') {
+	margin-left: -19px;
+	margin-right: 1px;
+}
 
-*/
+.navbar .navbar-inner .nav a.active, .navbar .nav a.active:hover {
+	color: #FF1769;
+}
 
 .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding: 10px;
@@ -67,7 +64,7 @@ reworking this horrible CSS
   display: block;
   width: 12px;
   height: 2px;
-  background-color: #FF1769;
+  background-color: #78EFED;
   -webkit-border-radius: 2px;
   	-moz-border-radius: 2px;
   		border-radius: 2px;
@@ -86,6 +83,12 @@ reworking this horrible CSS
 	background-color: #696370;
 }
 
+.hero-unit.active {
+	-webkit-box-shadow:-3px 3px 5px 5px rgba(188, 214, 48, 0.4);
+		-moz-box-shadow:	-3px 3px 5px 5px rgba(188, 214, 48, 0.4);
+			box-shadow:			-3px 3px 5px 5px rgba(188, 214, 48, 0.4);
+}
+
 .hero-unit:hover {
 	cursor: default;
 }
@@ -102,6 +105,7 @@ reworking this horrible CSS
 
 .hero-unit p, .hero-unit ul li, .hero-unit h1 {
 	text-align: left;
+	padding-bottom: 10px;
 }
 
 .hero-unit h1, .hero-unit h2 {
@@ -110,7 +114,7 @@ reworking this horrible CSS
 	margin-top: 0;
 	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: lighter;
-	text-shadow: 0 0 12px #BBB;
+	text-shadow: 3px 3px 12px #BBB;
 	color: #999;
 }
 
@@ -129,7 +133,7 @@ reworking this horrible CSS
 
 .hero-unit.active h1, .hero-unit.active h2 {
 	color: #FF1769;
-	text-shadow: -3px 2px 3px rgba(150, 150, 150, 1);
+	text-shadow: 0 0 12px #000;
 }
 
 .hero-unit.active p, .hero-unit.active a, .hero-unit.active ul li {
@@ -150,7 +154,7 @@ footer {
 
 .navbar-fixed-bottom {
 	background-color: #FFF;
-	margin-left: -3px;
+	margin-left: -30px;
 	opacity: 0.5;
 }
 
