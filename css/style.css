@@ -24,6 +24,7 @@ ul li {
 	list-style-type: none;
 }
 
+/*
 .navbar * {
 	font-weight: bold;
 }
@@ -48,11 +49,15 @@ ul li {
 	margin-right:1px;
 }
 
-.navbar a.brand.active, .navbar .nav a.active:hover {
+.navbar a.brand.active {
 	border-right: 1px solid #BCD630;
 	border-left: 1px solid #BCD630;
 	cursor: default;
 } 
+
+reworking this horrible CSS
+
+*/
 
 .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding: 10px;
