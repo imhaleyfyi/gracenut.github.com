@@ -47,6 +47,11 @@ ul li {
 	background-color: #333;
 }
 
+.navbar a.brand:not(.active) {
+	margin-left:-19px;
+	margin-right:1px;
+}
+
 .navbar a.brand.active {
 	border-right: 1px solid #BCD630;
 	border-left: 1px solid #BCD630;
