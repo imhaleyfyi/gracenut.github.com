@@ -18,11 +18,25 @@ $(document).ready(function(){
 			return;
 		}
 		else {
-			var $id2 = '#n' + $this.attr('id');
+			var $id2 = '#a' + $this.attr('id');
 			$('a.active').removeClass('active');
 			$('div.active').removeClass('active');
 			$this.addClass('active');
 			$($id2).addClass('active');
 		}
-	})
+	});
+
+	$("a").click(function(){
+		if (!($(this).parent().parent()).hasClass('nav') && !($(this).hasClass("brand"))){
+			if (!($(this).parent().parent().parent().hasClass("active"))) {
+				$("a.active").removeClass("active");
+				$("div.active").removeClass("active");
+				$(this).parent().parent().parent().addClass("active");
+				$(this).parent().addClass("active");
+				$("#a"+$(this).parent().parent().parent().attr("id")).addClass("active");
+				$("#a"+$(this).parent().parent().parent().attr("id")).addClass("active");
+				return false;
+			}
+		}
+	});
 });
