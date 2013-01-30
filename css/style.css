@@ -72,6 +72,7 @@ ul li {
   	-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
+
 .btn-navbar .icon-bar + .icon-bar {
   margin-top: 5px;
 }
@@ -140,6 +141,10 @@ ul li {
 	text-shadow: none;
 }
 
+.hero-unit.active a:hover {
+	color: #78EFED;
+}
+
 .span12 .hero-unit, .span4 .hero-unit{
 	height: 200px;
 }
@@ -156,16 +161,25 @@ footer {
 	background-color: #FFF;
 	margin-left: -30px;
 	opacity: 0.5;
+	color: #333
 }
 
 .navbar-fixed-bottom a {
 	color: #78EFED;
 }
 
-.container > .container {
-	margin-bottom: 40px;
+.navbar-fixed-bottom .bland {
+	color: #333;
 }
 
-.bland {
-	color: #333;
+.navbar-fixed-bottom .bland:hover {
+	color: #FF1769;
+}
+
+.navbar-fixed-bottom li a:hover {
+	color: #BCD630;
+}
+
+.container > .container {
+	margin-bottom: 40px;
 }
