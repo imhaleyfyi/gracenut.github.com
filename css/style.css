@@ -118,13 +118,17 @@ ul li {
 }
 
 .hero-unit.active h1, .hero-unit.active h2, .hero-unit.active p, .hero-unit.active a, .hero-unit.active ul li {
-	text-shadow: none;
 	color: #FFF;
 	opacity: 1;
 }
 
 .hero-unit.active h1, .hero-unit.active h2 {
 	color: #FF1769;
+	text-shadow: -3px 2px 3px rgba(150, 150, 150, 1);
+}
+
+.hero-unit.active p, .hero-unit.active a, .hero-unit.active ul li {
+	text-shadow: none;
 }
 
 .span12 .hero-unit, .span4 .hero-unit{
