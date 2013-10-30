@@ -104,6 +104,10 @@ ul li {
 	text-decoration: none;
 }
 
+.hero-unit.active em {
+	color: white;
+}
+
 .hero-unit p, .hero-unit ul li, .hero-unit h1 {
 	text-align: left;
 	padding-bottom: 10px;
