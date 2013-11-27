@@ -103,8 +103,12 @@ header.fixed-top h1 {
 	color: #FF530D;
 }
 
-.hpage .container h3, .hpage a[href^="mailto"] {
+.hpage .container h3 {
 	border-bottom: 1px solid rgba(255, 83, 13, 0.3);
+}
+
+.hpage a {
+	border-bottom: 1px dotted rgba(255, 83, 13, 0.3);
 }
 
 /* #Media Queries
