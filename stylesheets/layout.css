@@ -1,0 +1,173 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+body {
+	background-image: url(../images/ravenna.png);
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h3 {
+	color: #666;
+}
+
+a {
+	text-decoration: none;
+}
+
+a, a * {
+	color: #666;
+	transition: all 0.3s ease-in-out;
+}
+
+img {
+	width: 80%;
+	margin: 10px 10%;
+}
+
+.super-container {
+	width: 100%;
+}
+
+.container {
+	margin-top: 130px;
+}
+
+a.person {
+	display: block;
+	background-color: transparent;
+}
+
+a.person:hover, a.person:focus {
+	background-color: rgba(51, 51, 51, 0.05);
+	color: #333;
+}
+
+a.person:hover h1, a.person:hover h2, a.person:focus h1, a.person:focus h2 {
+	color: #333;
+}
+
+header {
+	font-family: 'Shadows Into Light';
+}
+
+header a, header h1, header h2, header h3 {
+	display: inline-block;
+}
+
+header.fixed-top, footer.fixed-bottom {
+	background-image: url(../images/ravenna.png);
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+}
+
+header.fixed-top {
+	top: 0;
+}
+
+footer.fixed-bottom {
+	bottom: 0;
+	padding: 10px 0;
+}
+
+header.fixed-top h1 {
+	font-size: 60px;
+	color: rgba(51, 51, 51, 0.2);
+	padding: 20px 0;
+}
+
+header.fixed-top a {
+	font-size: 20px;
+}
+
+header.fixed-top a:hover, header.fixed-top a:hover h3, header.fixed-top a:focus, header.fixed-top a:focus h3 {
+	color: rgba(51, 51, 51, 0.4);
+}
+
+#anchors {
+	visibility: hidden;
+}
+
+#anchors li {
+	display: inline;
+}
+
+/* #Page Styles
+================================================== */
+
+/* hpage styles */
+.hpage .container a:not(.joah):hover, .hpage .container a:not(.joah):focus {
+	color: #FF530D;
+}
+
+.hpage h1 {
+	text-align: left;
+	color: #FF530D;
+}
+
+.hpage .container h3, .hpage a[href^="mailto"] {
+	border-bottom: 1px solid rgba(255, 83, 13, 0.3);
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		.hpage .container {
+			margin-top: 80px;
+			padding: 0 10px;
+		}
+	}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
