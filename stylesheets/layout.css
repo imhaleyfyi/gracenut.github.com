@@ -52,25 +52,11 @@ img {
 	margin-top: 130px;
 }
 
-a.person {
-	display: block;
-	background-color: transparent;
-}
-
-a.person:hover, a.person:focus {
-	background-color: rgba(51, 51, 51, 0.05);
-	color: #333;
-}
-
-a.person:hover h1, a.person:hover h2, a.person:focus h1, a.person:focus h2 {
-	color: #333;
-}
-
 header {
 	font-family: 'Shadows Into Light';
 }
 
-header a, header h1, header h2, header h3 {
+header h1 {
 	display: inline-block;
 }
 
@@ -93,16 +79,7 @@ footer.fixed-bottom {
 
 header.fixed-top h1 {
 	font-size: 60px;
-	color: rgba(51, 51, 51, 0.2);
 	padding: 20px 0;
-}
-
-header.fixed-top a {
-	font-size: 20px;
-}
-
-header.fixed-top a:hover, header.fixed-top a:hover h3, header.fixed-top a:focus, header.fixed-top a:focus h3 {
-	color: rgba(51, 51, 51, 0.4);
 }
 
 #anchors {
