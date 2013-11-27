@@ -39,6 +39,10 @@ a, a * {
 	transition: all 0.3s ease-in-out;
 }
 
+li {
+	line-height: 1.5em;
+}
+
 img {
 	width: 80%;
 	margin: 10px 10%;
@@ -103,8 +107,20 @@ header.fixed-top h1 {
 	color: #FF530D;
 }
 
-.hpage .container h3, .hpage a[href^="mailto"] {
+.hpage .container h3 {
 	border-bottom: 1px solid rgba(255, 83, 13, 0.3);
+}
+
+.hpage a {
+	border-bottom: 1px dotted rgba(51, 51, 51, 0.2);
+}
+
+.hpage a:not(.joah):hover {
+  border-bottom: 1px dotted rgba(255, 83, 13, 0.3);
+}
+
+.hpage a.joah:hover {
+	border-bottom: 1px dotted #333;
 }
 
 /* #Media Queries
