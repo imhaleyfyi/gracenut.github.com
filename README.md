@@ -1,4 +1,1 @@
-thm
-===
-
-code behind texashandmaids.com
+a basic conglomeration of information about me- Haley Higgins- ... I wish my name rhymed with "conglomeration" and "information"
